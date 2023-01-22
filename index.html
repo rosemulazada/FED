@@ -1,57 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head aria-role="head">
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <title>Notion - One workspace. Every team.</title>
-    <link rel="stylesheet" href="styles/style2.css" />
-    <link rel="icon" type="image/svg+xml" href="images/Notion_app_logo.png" />
+    <link rel="stylesheet" href="styles/style2.css"/>
+    <link rel="icon" type="image/svg+xml" href="images/Notion_app_logo.png"/>
   </head>
-  <header aria-role="header">
-    <nav role="navigation" class="images">
+
+ 
+
+  <body>
+    <header>
+    <nav class="images">
       <ul>
-        <li>
-          <img src="images/full-logo.png" alt="Notion logo." />
-        </li>
+        <li><a href="index.html"><img src="images/full-logo.png" alt="Notion logo."/></a></li>
         <li>
           <img
             class="menuOpen"
             alt="Hamburger menu"
             src="images/hamburger.png"
-            aria-hidden="true"
-          />
+            aria-hidden="true"/>
         </li>
+      </ul>
+     
+    </nav>
+
+    <nav>
+      
+      <ul class="dropdownOpen">
+        <li>
+          <details open>
+            <summary>Product
+              <img
+              class="dropdownClosed"
+              alt="Opened dropdown arrow"
+              src="/images/openArrow.svg" >
+            </summary>
+            <p>Overview</p>
+            <p>Template gallery</p>
+            <p>Customer stories</p>
+            <p>Connections</p>
+
+            <button>Download Notion</button>
+          </details>
+        </li>
+
+        <li><hr /></li>
+
+        <li>
+          <details >
+            <summary>Solutions
+              <img
+             
+              class="dropdownOpening"
+              alt="Closed dropdown arrow"
+              src="/images/90degarrow.png" >
+            </summary>
+            <p>BY TEAM SIZE</p>
+            <p>Enterprise</p>
+            <p>Small business</p>
+            <p>Personal</p>
+
+            <p>BY TEAM FUNCTION</p>
+            <p>Design</p>
+            <p>Engineering</p>
+            <p>Product</p>
+            <p>Managers</p>
+
+            <p>NOTION FOR</p>
+            <p>Startups</p>
+            <p>Remote work</p>
+            <p>Education</p>
+            <p>Nonprofits</p>
+          </details>
+
+          <li><hr></li>
+
+          <li>
+            <details >
+            <summary>Resources
+              <img 
+              class="dropdownOpening"
+              alt="Closed dropdown arrow"
+              src="/images/90degarrow.png">
+            </summary>
+            <p>Blog</p>
+            <p>Guides & tutorials</p>
+            <p>Webinars</p>
+            <p>Help centers</p>
+            <p>API docs</p>
+            <p>Community</p>
+          </details>
+        </li>
+
+          <li><hr></li>
+
+        <li>
+          <details class="notFirstDetails">
+            <summary>Download
+              <img
+              
+              class="dropdownOpening"
+              alt="Closed dropdown arrow"
+              src="/images/90degarrow.png">
+            </summary>
+            <p>iOS & Android</p>
+            <p><a href="download.html">Mac & Windows</a></p>
+            <p>Web Clipper</p>
+          </details>
+        </li>  
       </ul>
     </nav>
 
     <nav role="navigation">
-      <ul>
-        <ul>
-          <li><img src="images/full-logo.png" alt="Notion logo." /></li>
-          <li><a href="index.html">Product</a></li>
-          <li><a href="download.html">Download</a></li>
-          <li>Solutions</li>
-          <li>Resources</li>
-          <li>Pricing</li>
-        </ul>
 
-        <ul>
-          <li>Contact sales</li>
-          <li>Log in</li>
-          <li><button>Try Notion Free</button></li>
-        </ul>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="index.html"><img src="images/full-logo.png" alt="Notion logo."/></a></li>
+            <li><details>
+              <summary>Products</summary>
+              <p>Home</p>
+              <p>Template gallery</p>
+              <p>Connections stories</p>
+              <p>Pricing</p>
+            </details></li>
+            <li>
+              <details>
+                <summary>Download</summary>
+                <p>iOS & Android</p>
+                <p><a href="download.html">Mac & Windows</a></p>
+                <p>Web Clipper</p>
+                <p>Pricing</p>
+            </details>
+            </li>
+            
+          </ul>
+
+          <ul>
+            <li>Contact sales</li>
+            <li>Log in</li>
+            <li><button>Try Notion Free</button></li>
+          </ul>
+        </li>
       </ul>
+     
     </nav>
+      
+        
+        
+   
   </header>
-  <body aria-role="body">
-    <main aria-role="main">
+
+    <main>
       <!-- 1  -->
       <section>
         <article>
-          <h1>One workspace.</h1>
-          <h1>Every team.</h1>
+          <h1>
+            One workspace.
+            <span> Every team </span>
+          </h1>
           <h2>
             We're more than a doc. Or a table. Customize Notion to work the way
             you do.
@@ -77,15 +188,16 @@
       <!-- 2 -->
       <section>
         <article>
-          <img
-            src="images/spot-team-up.png"
-            alt="A few boxes arranged like the game Tetris."
-          />
-          <h3>Team up without the chaos</h3>
           <p>
             Connect your teams, projects and docs in Notion — so you can bust
             silos and move as one.
           </p>
+          <h3>Team up without the chaos</h3>
+
+          <img
+            src="images/spot-team-up.png"
+            alt="A few boxes arranged like the game Tetris."
+          />
         </article>
         <img
           src="images/acme-home.png"
@@ -96,16 +208,17 @@
       <!-- 3 -->
       <section>
         <article>
-          <img
-            src="images/spot-context.png"
-            alt="A box opening up to reveal information."
-          />
-          <h3>Never ask "What's the context?" again</h3>
           <p>
             Stale wikis aren't helpful. Neither are floating docs. In Notion,
             your daily work and knowledge live side by side — so you never lose
             context.
           </p>
+          <h3>Never ask "What's the context?" again</h3>
+
+          <img
+            src="images/spot-context.png"
+            alt="A box opening up to reveal information."
+          />
         </article>
 
         <img
@@ -117,15 +230,15 @@
       <!-- 4 -->
       <section>
         <article>
-          <img
-            src="images/spot-workflow.png"
-            alt="A series of boxes connected by string."
-          />
-          <h3>Build the workflow you want</h3>
           <p>
             Customize Notion to make it work the way you want it to. Just drag
             and drop to craft the dashboard, website, doc, or system you need.
           </p>
+          <h3>Build the workflow you want</h3>
+          <img
+            src="images/spot-workflow.png"
+            alt="A series of boxes connected by string."
+          />
         </article>
 
         <img
@@ -137,13 +250,14 @@
       <!-- 5 -->
       <section>
         <article>
-          <img src="images/spot-ecosystem.png" alt="An open box." />
-          <h3>Benefit from a global ecosystem of creators</h3>
+          <p>You'll never want for resources or support.</p>
           <p>
             Get inspiration from thousands of community-made templates,
             integrations, and events.
           </p>
-          <p>You'll never want for resources or support.</p>
+          <h3>Benefit from a global ecosystem of creators</h3>
+
+          <img src="images/spot-ecosystem.png" alt="An open box." />
         </article>
 
         <img src="images/ecosystem.png" alt="A picture of the ecosystem." />
@@ -154,13 +268,13 @@
       <!-- 1 / 6 -->
       <section>
         <article>
-          <h2>Built for endless uses.</h2>
-          <h2>Across all teams.</h2>
+          <button>Try Notion free</button>
           <h3>
             Notion solves problems common and unique to every team. These are
             just a few.
           </h3>
-          <button>Try Notion free</button>
+          <h2>Across all teams.</h2>
+          <h2>Built for endless uses.</h2>
         </article>
 
         <img src="images/bookshelf-spot.png" alt="A picture of a bookshelf." />
@@ -193,7 +307,10 @@
           <button>See all templates</button>
         </article>
 
-        <img src="images/blocks-spot.png" alt="A pic" />
+        <img
+          src="images/blocks-spot.png"
+          alt="A picture of cardboard boxes with one of them being open."
+        />
       </section>
 
       <!-- part with js here -->
@@ -205,38 +322,36 @@
           <button>Read all customer support -></button>
         </article>
 
-        <img hidden src="images/teamwork.png" alt="" />
+        <img
+          hidden
+          src="images/teamwork.png"
+          alt="A team of people working together."
+        />
       </section>
 
       <hr />
       <!-- 5 / 9 -->
       <section>
         <article>
-          <img src="images/match.png" alt="" />
-
-          <blockquote>
-            "Notion is a workspace that adapts to your needs. It's as minimal or
-            as powerful as you need it to be."
-          </blockquote>
-
           <section>
             <section>
               <h6>Rahim Makani</h6>
               <p>Director of Product</p>
             </section>
-            <img src="images/rahim-makani.png" alt="" />
+            <img
+              src="images/rahim-makani.png"
+              alt="An illustration of the Director of Product, Rahim Makani"
+            />
           </section>
+          <blockquote>
+            "Notion is a workspace that adapts to your needs. It's as minimal or
+            as powerful as you need it to be."
+          </blockquote>
+
+          <img src="images/match.png" alt="The logo of the company Match " />
         </article>
 
         <article>
-          <img src="images/loom.png" alt="" />
-
-          <blockquote>
-            "Notion continues to be the easiest way to get information
-            centralized somewhere and shout it out to someone else. For us,
-            that’s extremely important because half our team is remote."
-          </blockquote>
-
           <section>
             <section>
               <h6>Vinay Hiremath</h6>
@@ -245,19 +360,18 @@
 
             <img
               src="https://www.notion.so/cdn-cgi/image/format=auto,width=2048,quality=100/front-static/shared/people/vinay-hiremath.png"
-              alt=""
+              alt="Illustration of Vinay Hiremath, the Co-founder of Notion and Head of Engineering"
             />
           </section>
+          <blockquote>
+            "Notion continues to be the easiest way to get information
+            centralized somewhere and shout it out to someone else. For us,
+            that’s extremely important because half our team is remote."
+          </blockquote>
+          <img src="images/loom.png" alt="The logo of the company Loom" />
         </article>
 
         <article>
-          <img src="images/figma-logo.png" alt="" />
-
-          <blockquote>
-            "Notion’s ease of use is one of its hallmarks. It helps you visually
-            navigate content and remember where something is."
-          </blockquote>
-
           <section>
             <section>
               <h6>Marie Szuts</h6>
@@ -266,14 +380,18 @@
 
             <img
               src="https://www.notion.so/cdn-cgi/image/format=auto,width=2048,quality=100/front-static/shared/people/marie-szuts.png"
-              alt=""
-            />
+              alt="An illustration of the Head of People Ops of Notion, Marie Szuts"/>
           </section>
+          <blockquote>
+            "Notion’s ease of use is one of its hallmarks. It helps you visually
+            navigate content and remember where something is."
+          </blockquote>
+          <img src="images/figma-logo.png" alt="The logo of Figma." />
         </article>
       </section>
     </main>
 
-    <footer role="footer"></footer>
-    <script defer src="scripts/script.js"></script>
+    <footer></footer>
+    <script src="src/script.js"></script>
   </body>
 </html>

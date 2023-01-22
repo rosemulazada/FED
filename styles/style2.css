@@ -50,6 +50,30 @@ main {
   padding: 0;
 }
 
+details > summary {
+  list-style: none;
+}
+
+header nav:nth-of-type(3) ul li ul{
+  display: flex;
+  flex-direction: row;
+}
+
+header nav:nth-of-type(3) ul li {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+header nav:nth-of-type(3) ul li ul li a:first-of-type,
+header nav:nth-of-type(3) ul li ul li:first-of-type {
+  margin: 0;
+}
+
+/* .dropdownOpened::after {
+  content: url("https://www.notion.so/front-static/shared/icons/nav-caret.svg");
+} */
+
 button {
   font-family: inherit;
   font-weight: 450;
@@ -115,8 +139,16 @@ main > section:nth-of-type(5) > article > p:nth-of-type(2) {
 main > section > article {
   /* width: 50%; */
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   /* justify-content: space-evenly; */
+}
+
+main > section:first-of-type > article {
+  flex-direction: column;
+
+}
+main > section:nth-of-type(4) > article {
+  flex-direction: column-reverse;
 }
 
 main > section:nth-of-type(2) > img,
@@ -233,7 +265,12 @@ main > section:nth-of-type(10) > article > section > section > p {
 
 main > section:nth-of-type(10) {
   gap: 2.8rem;
+  align-items: baseline;
   justify-content: center;
+}
+
+main > section:nth-of-type(10) > article {
+  flex-direction: column-reverse;
 }
 
 main > section:nth-of-type(10) > article:nth-of-type(1) > img,
@@ -306,6 +343,12 @@ section:nth-of-type(5) > article > img {
   height: auto;
 }
 
+nav:nth-of-type(2) {
+  display: none;
+  height: 100%;
+  overflow: hidden;
+}
+
 section:not(:first-of-type) > h1 {
   margin-top: 0px;
 }
@@ -368,6 +411,10 @@ main > section:first-of-type > article > h2 {
 }
 
 main > section:first-of-type > article > h1 > span {
+  display: block;
+}
+
+.main2 > section:first-of-type > article > h1 > span {
   display: inline;
 }
 
@@ -378,6 +425,15 @@ main > section:nth-of-type(9) {
 
 .main2 > section:nth-of-type(2) {
   display: none;
+}
+
+header nav:nth-of-type(3) ul li{
+gap: 38rem;
+}
+
+header nav:nth-of-type(3) ul li details,
+header nav:nth-of-type(3) ul  {
+  margin-top: 0.70rem;
 }
 
 .main2 section:nth-of-type(3) {
@@ -468,7 +524,7 @@ main > section:nth-of-type(9) {
   main > section > article {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
   }
 
@@ -481,6 +537,22 @@ main > section:nth-of-type(9) {
 
   hr {
     margin: 0 2rem 4rem 2rem;
+  }
+
+
+  nav:nth-of-type(2) ul {
+    margin: 2rem;
+    padding: 0;
+  }
+
+  nav:nth-of-type(2) li hr {
+    margin: 2rem 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  nav:nth-of-type(2) li details summary {
+    font-weight: 700;
   }
 
   /* 2 */
@@ -577,7 +649,6 @@ main > section:nth-of-type(9) {
     background-color: #fffefc;
     color: black;
     border: 1px solid #6666654f;
-    box-shadow: 1px #cfcece17;
   }
 
   section:first-of-type > article > p {
@@ -720,13 +791,13 @@ main > section:nth-of-type(9) {
 
   /* MENU */
 
-  nav:nth-of-type(2) {
+  nav:nth-of-type(3) {
     display: none;
   }
   header {
     margin-bottom: 4rem;
   }
-  header nav {
+  header nav:first-of-type {
     margin: 1rem 2rem;
   }
   header nav ul li {
@@ -744,14 +815,14 @@ main > section:nth-of-type(9) {
     margin-bottom: 0;
   }
 
-  ul {
+  nav:not(:nth-of-type(2)) ul {
     padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  header > nav > ul > li > img {
+  header > nav > ul > li > a > img {
     width: auto;
     height: 2.375rem;
     list-style: none;
@@ -762,6 +833,23 @@ main > section:nth-of-type(9) {
     height: 1.5rem;
     width: auto;
     margin-top: 0.5rem;
+  }
+
+  nav:nth-of-type(2) {
+    display: inline;
+    z-index: 2;
+    overflow-x: hidden;
+    position: fixed;
+    width: 100%;
+  }
+
+  .whiteBg {
+    background-color: white;
+    position: fixed;
+  }
+
+  main {
+    z-index: 0;
   }
 
   /* Onderstaande hamburger menu code van: https://codepen.io/roza-m/pen/NWzQyyj */
@@ -775,5 +863,29 @@ main > section:nth-of-type(9) {
     /* developer.mozilla.org/en-US/docs/Web/CSS/content */
     /* de url: https://assets.codepen.io/274456/ui-icon-cross.svg */
     content: url(/images/closed.png);
+  }
+
+  section:nth-of-type(7) {
+    display: none;
+  }
+
+  .dropdownOpen {
+    display: none;
+  }
+
+  .dropdownClosed img {
+    content: url(/images/90degarrow.png);
+  }
+
+  nav:nth-of-type(2) > details > section {
+    margin: 0;
+    gap: 0;
+  }
+
+  nav:nth-of-type(2) {
+    flex-direction: column;
+  }
+  .dropdownOpening img {
+    content: url(/images/openArrow.svg);
   }
 }
