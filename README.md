@@ -47,7 +47,7 @@ Responsive (eerst surface)
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Download for Mac & Windows
-<img src="readme-images/SS-2-1.png" width="375px" alt="omschrijving van de pagina">
+<img src="readme-images/SS-2.1.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
