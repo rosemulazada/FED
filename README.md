@@ -221,6 +221,8 @@ Bij deze les hadden we het anders aangepakt - we hadden niet meer gesprekken per
   Ookal ben ik trots op het hamburgermenu, het is me niet gelukt om 1 functie te schrijven waarmee ik alle details open maak. Ik heb hiervoor helaas aparte functies per details element, wat ook werkt maar het kan zeker eenvoudiger.
   <img src="readme-images/JSstruggle.png" width="375px" alt="uitomst opdracht 1">
   Dit is het onderdeel van de site die ik graag wou proberen met javascript maar waar ik uiteindelijk niet aan toe ben gekomen. Ik denk dat ik het wel had kunnen doen.
+
+  Verder is er nog een afbeelding onderaan de Download pagina die ik niet heb. Dit was niet perse lastig maar ik heb het er uiteindelijk uitgelaten omdat ik bezig was met belangrijkere onderdelen.
 </details>
 
 
