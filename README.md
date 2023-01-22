@@ -87,6 +87,7 @@ De motoriek en visuele testen hadden we deze week niet gedaan.
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/SS-menu.png" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/JSstruggle.png" width="375px" alt="uitomst opdracht 1">
 
 </details>
 
