@@ -862,7 +862,7 @@ header nav:nth-of-type(3) ul  {
     /* met 'content' van de img vervangen */
     /* developer.mozilla.org/en-US/docs/Web/CSS/content */
     /* de url: https://assets.codepen.io/274456/ui-icon-cross.svg */
-    content: url(images/closed.png);
+    content: url(../images/closed.png);
   }
 
   section:nth-of-type(7) {
@@ -874,7 +874,7 @@ header nav:nth-of-type(3) ul  {
   }
 
   .dropdownClosed img {
-    content: url(images/90degarrow.png);
+    content: url(../images/90degarrow.png);
   }
 
   nav:nth-of-type(2) > details > section {
@@ -886,6 +886,6 @@ header nav:nth-of-type(3) ul  {
     flex-direction: column;
   }
   .dropdownOpening img {
-    content: url(images/openArrow.svg);
+    content: url(../images/openArrow.svg);
   }
 }
