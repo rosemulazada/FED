@@ -884,6 +884,7 @@ header nav:nth-of-type(3) ul  {
 
   nav:nth-of-type(2) {
     flex-direction: column;
+    overflow-y: scroll;
   }
   .dropdownOpening img {
     content: url(../images/openArrow.svg);
