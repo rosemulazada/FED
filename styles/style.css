@@ -466,6 +466,12 @@ header nav:nth-of-type(3) ul  {
 
 /* MENU */
 
+@media (min-width: 1440px) {
+  header nav:nth-of-type(3) ul li {
+    gap: 38rem;
+  }
+}
+
 @media (min-width: 1080px) {
   nav:first-of-type {
     display: none;
@@ -490,6 +496,8 @@ header nav:nth-of-type(3) ul  {
     flex-direction: row;
     gap: 1rem;
     padding: 0;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   ul li img {
