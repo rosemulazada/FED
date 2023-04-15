@@ -107,8 +107,13 @@ button:hover {
 main > section {
   display: flex;
   flex-direction: row;
+  gap: 9rem;
   justify-content: space-evenly;
   width: 100%;
+}
+
+.main2 > section {
+  gap: 0;
 }
 
 section:nth-of-type(2),
@@ -428,7 +433,7 @@ main > section:nth-of-type(9) {
 }
 
 header nav:nth-of-type(3) ul li{
-gap: 38rem;
+gap: 44rem;
 }
 
 header nav:nth-of-type(3) ul li details,
@@ -468,7 +473,7 @@ header nav:nth-of-type(3) ul  {
 
 @media (min-width: 1440px) {
   header nav:nth-of-type(3) ul li {
-    gap: 38rem;
+    gap: 44rem;
   }
 }
 
