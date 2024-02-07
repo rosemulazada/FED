@@ -54,7 +54,7 @@ details > summary {
   list-style: none;
 }
 
-header nav:nth-of-type(3) ul li ul{
+header nav:nth-of-type(3) ul li ul {
   display: flex;
   flex-direction: row;
 }
@@ -150,7 +150,6 @@ main > section > article {
 
 main > section:first-of-type > article {
   flex-direction: column;
-
 }
 main > section:nth-of-type(4) > article {
   flex-direction: column-reverse;
@@ -432,13 +431,13 @@ main > section:nth-of-type(9) {
   display: none;
 }
 
-header nav:nth-of-type(3) ul li{
-gap: 44rem;
+header nav:nth-of-type(3) ul li {
+  gap: 44rem;
 }
 
 header nav:nth-of-type(3) ul li details,
-header nav:nth-of-type(3) ul  {
-  margin-top: 0.70rem;
+header nav:nth-of-type(3) ul {
+  margin-top: 0.7rem;
 }
 
 .main2 section:nth-of-type(3) {
@@ -472,6 +471,11 @@ header nav:nth-of-type(3) ul  {
 /* MENU */
 
 @media (min-width: 1440px) {
+  header > nav:nth-of-type(3) {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
   header nav:nth-of-type(3) ul li {
     gap: 44rem;
   }
@@ -551,7 +555,6 @@ header nav:nth-of-type(3) ul  {
   hr {
     margin: 0 2rem 4rem 2rem;
   }
-
 
   nav:nth-of-type(2) ul {
     margin: 2rem;
